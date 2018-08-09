@@ -7,7 +7,7 @@ namespace myapp.Printers
     {
         public string Print(DateTime startTime, DateTime finishTime)
         {
-            return startTime.Day + " - " + finishTime.ToShortDateString();
+            return startTime.ToShortDateString().Substring(0, 2) + " - " + finishTime.ToShortDateString();
         }
     }
 }
