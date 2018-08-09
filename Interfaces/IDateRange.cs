@@ -2,7 +2,7 @@ using System;
 
 namespace myapp.Interfaces
 {
-    interface IMainClass
+    interface IDateRange
     {
         string ShowRange(string start, string finish);
     }

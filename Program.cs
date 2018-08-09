@@ -11,7 +11,7 @@ namespace myapp
             {
                 return;
             }
-            var main = new MainClass();
+            var main = new DateRange();
             Console.WriteLine(main.ShowRange(args[0], args[1]));
         }
     }

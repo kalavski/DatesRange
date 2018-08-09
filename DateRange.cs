@@ -4,15 +4,15 @@ using myapp.Printers;
 
 namespace myapp
 {
-    public class MainClass : IMainClass
+    public class DateRange : IDateRange
     {
         public string ShowRange(string start, string finish)
         {
-            DateTime startTime = DateTime.Parse(start);
-            DateTime finishTime = DateTime.Parse(finish);
+            var startTime = DateTime.Parse(start);
+            var finishTime = DateTime.Parse(finish);
 
-            int checker = CheckRange(startTime, finishTime);
-            string message = "";
+            var checker = CheckRange(startTime, finishTime);
+            var message = "";
             switch(checker)
             {
                 case 0:
@@ -31,7 +31,7 @@ namespace myapp
 
         private int CheckRange(DateTime startTime, DateTime finishTime )
         {
-            int checker = 0;
+            var checker = 0;
 
             if(startTime.Month == finishTime.Month && startTime.Year == finishTime.Year)
             {
