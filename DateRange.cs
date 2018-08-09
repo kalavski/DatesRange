@@ -1,8 +1,8 @@
 using System;
-using myapp.Interfaces;
-using myapp.Printers;
+using myapp2.Interfaces;
+using myapp2.Printers;
 
-namespace myapp
+namespace myapp2
 {
     public class DateRange : IDateRange
     {
@@ -15,13 +15,13 @@ namespace myapp
             var message = "";
             switch(checker)
             {
-                case 0:
+                case DateEnum.Years:
                     message = new YearPrinter().Print(startTime, finishTime);
                     break;
-                case 1:
+                case DateEnum.Months:
                     message = new MonthPrinter().Print(startTime, finishTime);
                     break;
-                case 2:
+                case DateEnum.Days:
                     message = new DayPrinter().Print(startTime, finishTime);
                     break;
             }
@@ -29,19 +29,24 @@ namespace myapp
             return message;
         }
 
-        private int CheckRange(DateTime startTime, DateTime finishTime )
+        private DateEnum CheckRange(DateTime startTime, DateTime finishTime )
         {
-            var checker = 0;
+            var checker = DateEnum.Years;
 
             if(startTime.Month == finishTime.Month && startTime.Year == finishTime.Year)
             {
-                checker = 2;
+                checker = DateEnum.Days;
             }
             else if(startTime.Year == finishTime.Year)
             { 
-                checker = 1;
+                checker = DateEnum.Months;
             }
             return checker;
         }
+    }
+
+    enum DateEnum
+    {
+        Days, Months, Years
     }
 }

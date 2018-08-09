@@ -1,7 +1,7 @@
 
 using System;
 
-namespace myapp.Validation
+namespace myapp2.Validation
 {
     public static class Validation
     {

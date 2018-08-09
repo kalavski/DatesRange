@@ -1,6 +1,6 @@
 using System;
 
-namespace myapp.Interfaces
+namespace myapp2.Interfaces
 {
     interface IDateRange
     {

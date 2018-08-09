@@ -1,7 +1,7 @@
 using System;
-using myapp.Interfaces;
+using myapp2.Interfaces;
 
-namespace myapp.Printers
+namespace myapp2.Printers
 {
     public class MonthPrinter: IPrinter
     {

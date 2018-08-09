@@ -1,7 +1,7 @@
 ﻿using System;
-using myapp.Validation;
+using myapp2.Validation;
 
-namespace myapp
+namespace myapp2
 {
     class Program
     {
