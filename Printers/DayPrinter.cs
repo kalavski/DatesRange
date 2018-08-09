@@ -1,7 +1,7 @@
 using System;
-using myapp2.Interfaces;
+using RangePrinter.Interfaces;
 
-namespace myapp2.Printers
+namespace RangePrinter.Printers
 {
     public class DayPrinter: IPrinter
     {

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/myapp2.csproj"
+                "${workspaceFolder}/RangePrinter.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

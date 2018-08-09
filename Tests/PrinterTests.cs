@@ -1,8 +1,8 @@
 using System;
 using NUnit.Framework;
-using myapp2.Printers;
+using RangePrinter.Printers;
 
-namespace myapp2
+namespace RangePrinter
 {
     [TestFixture]
     class PrinterTest

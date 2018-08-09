@@ -1,7 +1,6 @@
-
 using System;
 
-namespace myapp2.Validation
+namespace RangePrinter.Validation
 {
     public static class Validation
     {

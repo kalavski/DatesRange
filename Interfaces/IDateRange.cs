@@ -1,6 +1,6 @@
 using System;
 
-namespace myapp2.Interfaces
+namespace RangePrinter.Interfaces
 {
     interface IDateRange
     {

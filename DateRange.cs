@@ -1,8 +1,8 @@
 using System;
-using myapp2.Interfaces;
-using myapp2.Printers;
+using RangePrinter.Interfaces;
+using RangePrinter.Printers;
 
-namespace myapp2
+namespace RangePrinter
 {
     public class DateRange : IDateRange
     {

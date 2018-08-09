@@ -1,8 +1,8 @@
 using System;
 using NUnit.Framework;
-using myapp2.Interfaces;
+using RangePrinter.Interfaces;
 
-namespace myapp2
+namespace RangePrinter
 {
     [TestFixture]
     class DateRangeTests

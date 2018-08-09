@@ -1,7 +1,7 @@
 ﻿using System;
-using myapp2.Validation;
+using RangePrinter.Validation;
 
-namespace myapp2
+namespace RangePrinter
 {
     class Program
     {
